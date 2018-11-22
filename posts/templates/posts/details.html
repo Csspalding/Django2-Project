@@ -1,0 +1,22 @@
+{% extends 'posts/layout.html' %}
+{#author Cass November 12th 2018 
+this is written with jinja2 code for MaterialiseCSS 
+between brackets with % 
+this file gets a post title from posts.views.py details method where 
+it loops though the id for the item object clicked on and gets the object 
+from the database to display in this text field container with MaterialiseCSS #}
+
+{% block content %}
+<h3 class = "centre-align blue lighten-4", class="container centre-align">{{post.title}}</h3>
+    <div class ="card">
+        <div class = "card-content">
+            {{post.body}}
+        </div>
+        <div class = "card-action">
+            {{post.created_at}}
+        </div>
+    </div>
+<a href= "/posts" class="btn">Go Back</a> 
+
+{% endblock %}
+<p2><br>because anyone can code.... HELLO FROM DETAILS.HTML</p2>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!--  #author Cass November 12th 2018
+from MaterizeCSS getting started link is copied from the CND box. Note there is also a JavaScrip link to copy if using later -->
+    <title>anyoneCanCode Blog</title>
+</head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<body>
+    <header class = "container center-align">
+        <h1><b><i>anyoneCanCode</i></b></h1> 
+    </header> 
+    <!--so each template is different wrap into a container, this is Jinja below in brackets-->
+    <div class = "container">
+
+        {% block content %}
+        {% endblock %}
+<!--add an admin link-->
+        <br>
+
+        <a style = "display:block" class="center-align" href="/admin" >Admin Login</a>
+    </div>   
+</body>
+</html>

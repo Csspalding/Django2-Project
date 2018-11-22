@@ -1,0 +1,20 @@
+{% extends 'posts/layout.html' %}{#author Cass November 12th 2018#}
+{# this is written with jinja2 code for MaterialiseCSS between brackets with modulars  #}
+{# this is a loop in jinga to list the posts and add a click/hyperlink the right one #}
+{% block content %}
+
+
+    <h2 class = "container center-align">from humble beginnings my journey so far...</h2>
+    <h4 class = "container center-align"><n></n><n></n>l a t e s t &nbsp;&nbsp;p o s t s</h4>
+    <h6 class = "centre-align blue lighten-4", class="container centre-align"></h6>
+
+    
+   
+    <ul class = "collection">
+        {% for post in posts %} 
+            <li class = "collection-item"><a href= "/posts/details/{{post.id}}">{{post.title}}></a></li>
+        {% endfor %}
+    </ul>
+ <p2><br> HELLO FROM INDEX.HTML</p2>
+
+{% endblock %}
