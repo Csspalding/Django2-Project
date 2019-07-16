@@ -16,14 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 
-
+from CupCakeCode import views 
 from posts import views
 #from django.conf import settings
 #from django.conf.urls.static import static
 
 urlpatterns = [
-    #path('', views.home, name='home'), # sets the url localhost:8000 homepage
+    path('', include('CupCakeCode.urls')), # sets the url localhost:8000 homepage
     path('', include('posts.urls')), #sets homepage to our trial app posts page for now change later to a home page 
     path('admin/', admin.site.urls),
-    path('posts/', include('posts.urls')),#this include method needs to be imported
+    path('posts/', include('posts.urls')),#this django.urls 'include' method needs to be imported see above imports
 ]
