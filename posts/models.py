@@ -1,4 +1,4 @@
-#author Cass November 12th 2018
+#author Cass July 2019
 from django.db import models
 from datetime import datetime
 

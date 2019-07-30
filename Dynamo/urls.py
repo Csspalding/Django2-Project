@@ -22,9 +22,16 @@ from posts import views
 #from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', include('CupCakeCode.urls')), # sets the url localhost:8000 homepage
-    path('/about', include('CupCakeCode.urls')),
-   # path('', include('posts.urls')), #sets homepage to our trial app posts page for now change later to a home page 
+    #django.urls 'include' method needs to be imported see above imports
+    path('', include('CupCakeCode.urls')), # sets the url localhost:8000  as the home page
+    
+    #path('home/', include('CupCakeCode.urls')),
+    path('about/', include('CupCakeCode.urls')),
+    path('info/', include('CupCakeCode.urls')),
+    #todo the app currently test page
+    path('cup_cake/', include('CupCakeCode.urls')),
+    path('contact/', include('CupCakeCode.urls')),
+
     path('admin/', admin.site.urls),
-    path('posts/', include('posts.urls')),#this django.urls 'include' method needs to be imported see above imports
+    path('posts/', include('posts.urls')),
 ]

@@ -1,30 +1,38 @@
-<!DOCTYPE html>
+{%include 'CupCakeCode/layout.html' %}<!DOCTYPE html>
+
+{% block blog_header %}
 <html lang="en">
+
 <head>
-
+<!--  #author Cass July 8th 2019
+from bootstrap 4 CSS getting started link is copied from the CND box. Note there is also a JavaScript & Poppie -->
+<!--Browser tab title-->
+ <title> Blog</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<!--  #author Cass July 2019
-from MaterizeCSS getting started link is copied from the CND box. Note there is also a JavaScrip link to copy if using later -->
-    <title> Blog</title>
-</head>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    
+</head>
+ 
 <body>
+    
+<!-- Blog container for posts 
+from MaterizeCSS getting started link is copied from the CND box. Alternative Table list for Blog posts-->
+{% comment %} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> {% endcomment %}
     <header class = "container center-align">
-        <h1><b><i>I believe anyone can code</i></b></h1> 
+        <h1><b><i>B L O G </i></b></h1> 
     </header> 
     <!--so each template is different wrap into a container, this is Jinja below in brackets-->
     <div class = "container">
 
-        {% block content %}
+        {% block blog_content %}
         {% endblock %}
 
         <br>
-
+<!--todo a footer template-->
         <a style = "display:block" class="center-align" href="/admin" >Admin Login</a>
     </div>   
 </body>
+{% endblock %}
 </html>
