@@ -35,7 +35,7 @@ from bootstrap 4 CSS getting started link is copied from the CND box. Note there
     <div class="container">
     <h2>anyone can code....</h2>
     <!--row of buttons-->
-         <a href=" " class="btn btn-secondary" role="button">Home</a>
+         <a href="/home" class="btn btn-secondary" role="button">Home</a>
          <a href="/posts" class="btn btn-secondary" role="button">Blog</a>
          <a href="/about" class="btn btn-secondary" role="button">About</a>
          <a href="/info" class="btn btn-secondary" role="button">Info</a>
@@ -46,13 +46,19 @@ from bootstrap 4 CSS getting started link is copied from the CND box. Note there
 </header> 
 
 
-    <div class = "container">
-
-<!--add Login todo link 
-todo add another footer.html footer wrapper jinja layout for all pages-->
+<div class = "container">
+{% block content %}
+{% endblock %}
+</div>  
+<div class = "container">
+<!--This is the footer layout for all pages-->
         <br>
-
+        <br>
+        <br>
         <a style = "display:block" class="center-align" href="/admin" >AdminLogin</a>
+        <br>
+        <!-- todo Login href-->
+        <a style = "display:block" class="center-align" href="#" >Login or Register</a>
         <br>
         <a style = "display:block" class="center-align" href="/contact" >Contact Us</a>
     </div>   
