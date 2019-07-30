@@ -1,8 +1,6 @@
 {%include 'CupCakeCode/layout.html' %}<!DOCTYPE html>
-
-{% block blog_header %}
+{% block content %}
 <html lang="en">
-
 <head>
 <!--  #author Cass July 8th 2019
 from bootstrap 4 CSS getting started link is copied from the CND box. Note there is also a JavaScript & Poppie -->
@@ -11,12 +9,10 @@ from bootstrap 4 CSS getting started link is copied from the CND box. Note there
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     
 </head>
  
-<body>
-    
+<body>    
 <!-- Blog container for posts 
 from MaterizeCSS getting started link is copied from the CND box. Alternative Table list for Blog posts-->
 {% comment %} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> {% endcomment %}
@@ -27,11 +23,11 @@ from MaterizeCSS getting started link is copied from the CND box. Alternative Ta
     <div class = "container">
 
         {% block blog_content %}
-        {% endblock %}
+        {% endblock blog_content %}
 
         <br>
 <!--todo a footer template-->
-        <a style = "display:block" class="center-align" href="/admin" >Admin Login</a>
+        <a style = "display:block" class="center-align" href="/admin" >Other</a>
     </div>   
 </body>
 {% endblock %}

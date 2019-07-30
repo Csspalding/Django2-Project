@@ -25,7 +25,7 @@ urlpatterns = [
     #django.urls 'include' method needs to be imported see above imports
     path('', include('CupCakeCode.urls')), # sets the url localhost:8000  as the home page
     
-    #path('home/', include('CupCakeCode.urls')),
+    path('home/', include('CupCakeCode.urls')),
     path('about/', include('CupCakeCode.urls')),
     path('info/', include('CupCakeCode.urls')),
     #todo the app currently test page
