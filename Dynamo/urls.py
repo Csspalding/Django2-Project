@@ -24,14 +24,12 @@ from posts import views
 urlpatterns = [
     #django.urls 'include' method needs to be imported see above imports
     path('', include('CupCakeCode.urls')), # sets the url localhost:8000  as the home page
-    
+    #path('', main_views.homepage),
     path('home/', include('CupCakeCode.urls')),
     path('about/', include('CupCakeCode.urls')),
     path('info/', include('CupCakeCode.urls')),
-    #todo the app currently test page
     path('cup_cake/', include('CupCakeCode.urls')),
     path('contact/', include('CupCakeCode.urls')),
-
     path('admin/', admin.site.urls),
     path('posts/', include('posts.urls')),
 ]
