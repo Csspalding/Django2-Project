@@ -14,7 +14,9 @@ def home(request):
 
 
 def about(request):
-   return render(request, 'CupCakeCode/about.html')
+   #return render(request, 'CupCakeCode/about.html')
+ return HttpResponse('THIS IS A Test :Hello from About Page')
+
 
 def info(request):
    return render(request, 'CupCakeCode/info.html')

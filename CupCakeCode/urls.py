@@ -11,6 +11,7 @@ urlpatterns = [
   # local host extension: /CupCakeCode/ , passes to the home method in cupcakecode dir views.py file     
   
   path('', views.home, name='home'),
+
   path('home', views.home, name='home'),
   path('about', views.about, name='about'),
   path('info', views.info, name='info'),
