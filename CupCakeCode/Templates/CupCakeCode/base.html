@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!--  #author Cass July 8th 2019
+<!--  #author Cass July 8th 2019 this is the BASE.html
 from bootstrap 4 CSS getting started link is copied from the CND box. Note there is also a JavaScript & Poppie -->
 <!--Browser tab title-->
-<title>CupCakeCode Home</title>
+<title>
+{% block title_block %}
+{% endblock %}
+</title>
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">    
@@ -46,8 +50,8 @@ from bootstrap 4 CSS getting started link is copied from the CND box. Note there
 </header> 
 
 
-<div class = "container">
-{% block content %}
+<div>
+{% block body_content %}
 {% endblock %}
 </div>  
 <div class = "container">

@@ -1,18 +1,22 @@
-{%include 'CupCakeCode/layout.html' %}<!DOCTYPE html>
-{% block content %}
+{% extends 'CupCakeCode/base.html' %}<!DOCTYPE html>
+
 <html lang="en">
 <head>
 <!--  #author Cass July 8th 2019
 from bootstrap 4 CSS getting started link is copied from the CND box. Note there is also a JavaScript & Poppie -->
-<!--Browser tab title-->
- <title> Blog</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-</head>
- 
-<body>    
+<!--Browser tab title-->
+		<title>
+				{% block title_block %}
+				    BlogCupCakeCode
+				{% endblock %}
+		</title>
+	</head>
+<body>
+ <div class = "container"> 
+    {% block body_content %}   
 <!-- Blog container for posts 
 from MaterizeCSS getting started link is copied from the CND box. Alternative Table list for Blog posts-->
 {% comment %} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> {% endcomment %}
@@ -23,12 +27,16 @@ from MaterizeCSS getting started link is copied from the CND box. Alternative Ta
     <div class = "container">
 
         {% block blog_content %}
-        {% endblock blog_content %}
+        {% comment %} see index.html {% endcomment %}
+        {% endblock %}
 
         <br>
 <!--todo a footer template-->
         <a style = "display:block" class="center-align" href="/admin" >Other</a>
+   
     </div>   
+    {% endblock %}
+   </div> 
 </body>
-{% endblock %}
+
 </html>

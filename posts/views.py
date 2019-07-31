@@ -11,7 +11,7 @@ from .models import Posts
 # Create your views here.
 #def home(request):
    # return HttpResponse('THIS IS A Test :Hello from Home Page')
-    # return render(request, 'posts/home.html', context)
+    
 
 def index(request):
     #return HttpResponse('Hello from Posts') #USE THIS FIRST to test page link works  - restful API

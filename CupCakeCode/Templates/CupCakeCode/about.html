@@ -1,19 +1,26 @@
-{% extends 'CupCakeCode/layout.html' %}
-{% block content %}
+{% extends 'CupCakeCode/base.html' %}
+head lang="en">
+		<meta charset="UTF-8" />
+		<title>
+				
+				{% block title_block %}
+					AboutCupCakeCode
+				{% endblock %}
+		</title>
+	</head>
+<body>
+    <div>
+         {% block body_content %}
 
-{#DO I NEED THIS PAGE OR IS IT DETAILS ON HOME PAGE???#}
+                <h1> ABOUT PAGE </h1>
+                <h4 class = "container">my story, why i made this website...</h4>
+                <h6 class = "container"><n></n><n></n>inspirational stories!</h6>
+                <h6 class = "centre-align blue lighten-4", class="container centre-align"></h6>
 
-    <h1> ABOUT PAGE </h1>
-    <h4 class = "container">my story, why i made this website...</h4>
-    <h6 class = "container"><n></n><n></n>inspirational stories!</h6>
-    <h6 class = "centre-align blue lighten-4", class="container centre-align"></h6>
+                <br>
+                <br>
+                <br><p2><br> About Page social media contact us links</p2>
 
-    <br>
-    <br>
-    <br>
-
-    
-  
- <p2><br> About Page social media contact us links</p2>
-
-{% endblock %}
+        {% endblock %}
+    </div>
+</body>

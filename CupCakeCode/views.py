@@ -5,7 +5,11 @@ from django.http import HttpResponse
 # Create your views here.
 def home(request):
    #return HttpResponse('THIS IS A Test :Hello from Home Page')
-  
+    
+   # context = {
+   #      'CupCakeCode' : CupCakeCode
+   #  }
+   #  return render(request, 'CupCakeCode/home.html', context)
     return render(request, 'CupCakeCode/home.html')
 
 

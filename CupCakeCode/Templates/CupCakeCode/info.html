@@ -1,15 +1,24 @@
-{% extends 'CupCakeCode/layout.html' %}
-{% block content %}
+{% extends 'CupCakeCode/base.html' %}
+<head lang="en">
+		<meta charset="UTF-8" />
+		<title>
+				{% block title_block %}
+					InfoCupCakeCode
+				{% endblock %}
+		</title>
+	</head>
+<body>
+    <div>
+        {% block body_content %}
 
-    <h1> info PAGE of TOOLS</h1>
-    <br>
-    <h4 class = "container">everything you need to get started...</h4>
-    <h6 class = "container">List of tools</h6>
-    <h2> buttons for different tools books/tutorials/courses </h2>
-    <h6 class = "centre-align blue lighten-4", class="container centre-align"></h6>
+            <h1> Info a PAGE of TOOLS & resources to help you begin coding</h1>
+            <br>
+            <h4 class = "container">everything you need, lets get started!</h4>
+            <h6 class = "container">List of tools</h6>
+            <h2> buttons or list for different tools books/tutorials/courses </h2>
+            <h6 class = "centre-align blue lighten-4", class="container centre-align"></h6>
+            <p2><br>Info Page social media contact us links</p2>
 
-    
-  
- <p2><br>Info Page social media contact us links</p2>
-
-{% endblock %}
+        {% endblock %}
+    </div>
+</body>
