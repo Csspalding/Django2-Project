@@ -12,11 +12,11 @@ urlpatterns = [
   
   path('', views.home, name='home'),
 
-  path('home', views.home, name='home'),
-  path('about', views.about, name='about'),
-  path('info', views.info, name='info'),
-  path('contact', views.contact, name='contact'),
-  path('cup_cake', views.cup_cake, name='cup_cake_app'),
+  path('home/', views.home, name='home'),
+  path('about/', views.about, name='about'),
+  path('info/', views.info, name='info'),
+  path('contact/', views.contact, name='contact'),
+  path('cup_cake/', views.cup_cake, name='cup_cake_app'),
   
 
   

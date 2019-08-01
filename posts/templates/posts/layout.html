@@ -22,12 +22,12 @@ from MaterizeCSS getting started link is copied from the CND box. Alternative Ta
 {% comment %} <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> {% endcomment %}
     <header class = "container center-align">
         <h1><b><i>B L O G </i></b></h1> 
-    </header> 
+    </header>
+    
     <!--so each template is different wrap into a container, this is Jinja below in brackets-->
     <div class = "container">
-
+{% comment %} see index.html {% endcomment %}
         {% block blog_content %}
-        {% comment %} see index.html {% endcomment %}
         {% endblock %}
 
         <br>
@@ -35,7 +35,7 @@ from MaterizeCSS getting started link is copied from the CND box. Alternative Ta
         <a style = "display:block" class="center-align" href="/admin" >Other</a>
    
     </div>   
-    {% endblock %}
+        {% endblock %} 
    </div> 
 </body>
 

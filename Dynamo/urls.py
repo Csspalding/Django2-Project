@@ -25,12 +25,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     #django.urls 'include' method needs to be imported see above imports
     path('', include('CupCakeCode.urls')), # sets the url localhost:8000  as the home page
-    #path('', main_views.homepage),
-    path('home/', include('CupCakeCode.urls')),
-    #path('about/', include('CupCakeCode.urls')),
-    #path('info/', include('CupCakeCode.urls')),
-    #path('cup_cake/', include('CupCakeCode.urls')),
-    #path('contact/', include('CupCakeCode.urls')),
+    path('', views.index, name='index'), 
     path('admin/', admin.site.urls),
-    path('posts/', include('posts.urls')),
+    path('posts/', include('posts.urls')),#will not work without this! index page is convention for homepage, will maybe need to rename in posts
 ]
